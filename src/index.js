@@ -1,4 +1,6 @@
-import renderFront from './home.js'
+import renderFront from './home.js';
+import renderAbout from './about.js';
+import renderMenu from './menu.js';
 import './styles/style.css';
 
 const contentPage = document.getElementById('content')
@@ -13,13 +15,18 @@ if(!start) {
 }
 
 homePage.addEventListener('click', () => {
-    contentPage.innerHTML = '';
+    clearDis();
     renderFront();
 });
 
 aboutPage.addEventListener('click', () => {
-    console.log('click')
     clearDis();
+    renderAbout();
+})
+
+menuPage.addEventListener('click', () => {
+    clearDis();
+    renderMenu();
 })
 
 function clearDis() {   

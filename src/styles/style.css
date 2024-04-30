@@ -15,10 +15,17 @@
 
 }
 
+@font-face {
+    font-family: 'Oswald';
+
+    src: url('Oswald-Light.ttf');
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    height: fit-content;
 }
 
 body {
@@ -29,31 +36,26 @@ body {
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: rgba(0,0,0,0.5);
+    height: auto;
 }
 
 header {
     height: 10vh;
+    width: 100%;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 10px;
+    justify-content: center; */
+    text-align: center;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
-nav {
-    /* display: flex;
-    align-items: right;
-    justify-content: right; */
-    /* gap: 30px; */
-}
-
 #content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid; */
-    height: 90vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: fit-content;
 }
 
 .headerDiv {
@@ -61,6 +63,7 @@ nav {
     display: grid;
     justify-items: center;
     align-items: center;
+    padding-top: 200px;
 }
 
 h1 {
@@ -143,4 +146,104 @@ h1 {
     width: 50%;
     background-color: #fff;
     color: white;
-  }
+}
+
+
+/* ABOUT PAGE CSS --------------------------------------------------*/
+.outDiv {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+    padding-top: 100px;
+}
+.navbar {
+    height: 15vh;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.about {
+    width: 60%;
+    height: fit-content;
+    border: 1px solid transparent;
+    padding: 50px;
+    /* background-color: rgba(65,65,65,0.7); */
+    background-color: rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Oswald';
+}
+
+hr {
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.para {
+    padding-bottom: 50px;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Oswald';
+}
+
+.imaDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vietpic {
+    width: 45%;
+    height: 300px;
+}
+
+#bikepic {
+    width: 45%;
+    height: 300px;
+}
+
+/* MENU CSS HERE ------------------------------------------------------------------- */
+.menudiv {
+    width: 60%;
+    padding: 100px;
+    border: 1px solid transparent;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 30px;
+}
+
+.flexmenu {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+#springrolls {
+    width: 40%;
+    height: 40%;
+}
+
+.gridmenu {
+    display: grid;
+}
+
+.menupara {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Oswald';
+    padding-top: 30px;
+}
+
+#bowlpho {
+    width: 40%;
+    /* height: 20%; */
+}
+
+#che {
+    width: 40%;
+    height: 40%;
+}
