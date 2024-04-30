@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Astral';
+
+    src: url('Cream\ Cake.otf');
+
+    font-weight: 600;
+    font-style: normal;
+    /* font-size: em; */
+}
+
+@font-face {
+    font-family: 'LatoBold';
+
+    src: url('Lato-BoldItalic.ttf');
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/pexel.jpg);
+    background-repeat: no-repeat;
+    background-position: center 53%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header {
+    height: 10vh;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    /* display: flex;
+    align-items: right;
+    justify-content: right; */
+    /* gap: 30px; */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    height: 90vh;
+}
+
+.headerDiv {
+    padding-bottom: 300px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 9em;
+    font-family: 'Astral';
+}
+
+.address {
+    color: white;
+    font-size: 1em;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+}
+
+#loca {
+    width: 1em;
+    height: 1em;
+    color: white;
+}
+
+.reserveBtn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    /* padding: 20px; */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.reserveBtn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    /* color: white; */
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5em;
+    font-family: 'LatoBold';
+    position: relative;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn::before, 
+.btn::after {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    color: white;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0px;
+    left: 20px;
+    display: block;
+    transition: all 0.5s ease;
+    bottom: -10px;
+    color: white;
+}
+  .btn:hover::after {
+    width: 50%;
+    background-color: #fff;
+    color: white;
+  }
